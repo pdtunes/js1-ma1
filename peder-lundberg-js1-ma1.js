@@ -84,7 +84,7 @@ function catArrayLoop(catArray) {
 /* Question 9
 Call the function from question 8, pass it the cats variable from question 7 and set the inner HTML of the resultsContainer variable from question 6 to the return value of the function.*/
 
-resultsContainer.innerHTML = catArrayLoop(cats);
+resultsContainer.innerHTML += catArrayLoop(cats);
  
 
 /* Question 10
