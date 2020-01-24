@@ -109,13 +109,21 @@ The function should return the following:
 function catArrayLoop(catArray) {
     let newHTML = "";
     for (let i = 0; i < catArray.length; i++) {
+        let catAge = "";
+        if (cats[i].age) {
+            catAge = cats[i].age;
+        }
+        else  {
+            catAge = "age unknown";
+        }
+             
         let details = `<div class="card">
             <h5> class="name">${cats[i].name}</h5>
-            <p> class="age">${cats[i].age}<p>
+            <p> class="age">${catAge}<p>
         </div>
     </div>`;
 
     newHTML += details;
     }
-    return catName;
+    return newHTML;
   }
